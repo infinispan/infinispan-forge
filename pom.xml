@@ -3,17 +3,19 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jboss.infinispan.forge</groupId>
-  <artifactId>plugin-infinispan</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <artifactId>forge-infinispan</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
   <properties>
-    <forge.api.version>1.0.6.Final</forge.api.version>
+    <forge.api.version>1.2.3.Final</forge.api.version>
+    <maven.compiler.version>2.3.2</maven.compiler.version>
+    <jboss.jee6.version>3.0.1.Final</jboss.jee6.version>
   </properties>
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.jboss.spec</groupId>
         <artifactId>jboss-javaee-6.0</artifactId>
-        <version>3.0.1.Final</version>
+        <version>${jboss.jee6.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -75,7 +77,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.3.2</version>
+        <version>${maven.compiler.version}</version>
         <configuration>
           <source>1.6</source>
           <target>1.6</target>
