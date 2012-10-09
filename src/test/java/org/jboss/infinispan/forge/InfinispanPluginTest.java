@@ -1,5 +1,6 @@
 package org.jboss.infinispan.forge;
 
+import org.infinispan.forge.InfinispanPlugin;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.forge.maven.facets.MavenDependencyFacet;
 import org.jboss.forge.project.dependencies.Dependency;
